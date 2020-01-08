@@ -14,7 +14,7 @@ Build a digital asset management application using blockchain
 
 > Expand on the short title, focusing on open source or generic tools and programs. Include IBM product names only if that product is required in the pattern and cannot be substituted.
 
-Use IBM Blockchain Platform 2.0 and IBM Kubernetes Service to build a Node.js application that can perform management of digital assets by maintaining the assets in IBM Cloud Object Storage and accessing the assets via a web application created using VueJS.
+Use IBM Blockchain Platform and IBM Kubernetes Service to build a Node.js application that can perform management of digital assets by maintaining the assets in IBM Cloud Object Storage and accessing the assets via a web application created using VueJS.
 
 
 # Author
@@ -95,9 +95,9 @@ In any Digital Asset Management system, there can be any number of users and the
   <img src="https://user-images.githubusercontent.com/8854447/71943978-65ba9600-3190-11ea-8131-31efc0db87a7.jpg">
 </p>
 
-1. The Blockchain Operator sets up the IBM Blockchain Platform 2.0 service.
-2. The IBM Blockchain Platform 2.0 service creates a Hyperledger Fabric network on an IBM Kubernetes Service, and the Blockchain Operator installs and instantiates the smart contract on the network.
-3. The Node.js application server uses the Fabric SDK to interact with the deployed network on IBM Blockchain Platform 2.0, IBM Cloud Object Storage instance and the Mailtrap Server (fake SMTP testing server) and creates APIs for a web client.
+1. The Blockchain Operator sets up the IBM Blockchain Platform service.
+2. The IBM Blockchain Platform service creates a Hyperledger Fabric network on an IBM Kubernetes Service, and the Blockchain Operator installs and instantiates the smart contract on the network.
+3. The Node.js application server uses the Fabric SDK to interact with the deployed network on IBM Blockchain Platform, IBM Cloud Object Storage instance and the Mailtrap Server (fake SMTP testing server) and creates APIs for a web client.
 4. The Vue.js client uses the Node.js application API to interact with the network.
 5. The User interacts with the Vue.js web interface to interact with the digital asset management application.
 
@@ -130,7 +130,7 @@ In any Digital Asset Management system, there can be any number of users and the
 
 * [IBM Cloud Kubernetes Service](https://cloud.ibm.com/kubernetes/catalog/cluster)
 
-* [IBM Blockchain Platform 2.0](https://cloud.ibm.com/catalog/services/blockchain-platform)
+* [IBM Blockchain Platform](https://cloud.ibm.com/catalog/services/blockchain-platform)
 
 * [IBM Blockchain Platform Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform)
 

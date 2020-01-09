@@ -37,7 +37,11 @@ Use IBM Blockchain Platform and IBM Kubernetes Service to build a Node.js applic
 
 > "View the demo": Provide the link to YouTube video of a recorded demo of the pattern. This is STRONGLY recommended. If you have other videos of demos or running apps, describe them here and add the URL below.
 
-* Video URL #TODO
+* Video URL
+
+Introduction and Demo: https://youtu.be/tfnRfDFWHUc
+
+Setup blockchain network: https://youtu.be/jWizAUhSj1Y
 
 
 # Summary

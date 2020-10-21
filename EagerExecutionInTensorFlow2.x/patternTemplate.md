@@ -7,14 +7,14 @@
 
 > Provide a suggested short title with a maximum of 10 words. The short title must start with a task- or goal-oriented verb; for example, "Build" "Create" "Detect" "Analyze" "Implement" "Write". You can include technologies (e.g. "blockchain"), but no product names.
 
-Learn about the benefits of enabling eager execution in TensorFlow.
+Learn about the benefits of enabling Eager Execution in TensorFlow.
 
 
 # Long title
 
 > Expand on the short title, focusing on open source or generic tools and programs. Include IBM product names only if that product is required in the pattern and cannot be substituted.
 
-See how enabling eager execution in TensorFlow makes it easier to debug and understand the flow of the code without making any significant changes in the code.
+See how enabling Eager Execution in TensorFlow makes it easier to debug and understand the flow of the code without making any significant changes in the code.
 
 
 # Author
@@ -43,9 +43,9 @@ TensorFlow is an end-to-end open source machine learning platform that makes it 
 
 This means that the code cannot be debugged and the intermediate values of all variables (that is, the results of individual TensorFlow operations) are only available at the end when the entire code is run as part of a Session.
 
-Enabling eager execution is the only way to obtain these intermediate results without having to run the entire code within a Session.
+Enabling Eager Execution is the only way to obtain these intermediate results without having to run the entire code within a Session.
 
-This developer pattern demonstrates the features of eager execution and the benefits of having it enabled by default in TensorFlow version 2.x.
+This developer pattern demonstrates the features of Eager Execution and the benefits of having it enabled by default in TensorFlow version 2.x.
 
 
 # Technologies
@@ -54,7 +54,7 @@ This developer pattern demonstrates the features of eager execution and the bene
 
 > To view all components see [https://developer.ibm.com/technologies/](https://developer.ibm.com/technologies/).
 
-* [Python](https://www.python.org) is a programming language that lets you work quickly and integrate systems more effectively.
+* [Jupyter Notebooks](https://jupyter.org/) is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
 
 
 # Description
@@ -65,7 +65,7 @@ This developer pattern demonstrates the features of eager execution and the bene
 
 Due to a C/C++ backend, TensorFlow is able to run faster than pure Python code. A TensorFlow application uses a structure known as a data flow graph. In TensorFlow version 1.0, by default, every graph had to be run within a TensorFlow session. This only allowed for the entire graph to be run all at once and made it hard to debug the computation graph. The only way to get around this and be able to debug the code was to use Eager Execution.
 
-Eager execution is a flexible machine learning platform for research and experimentation, providing:
+Eager Execution is a flexible machine learning platform for research and experimentation, providing:
 
 * An intuitive interface so the code can be structured naturally and use Python data structures. Small models and small data can be quickly iterated.
 * Easier debugging by providing the ability to call operations directly to inspect code line by line and test changes.
@@ -73,7 +73,7 @@ Eager execution is a flexible machine learning platform for research and experim
 
 With TensorFlow 2.x, Eager Execution is enabled by default. This allows TensorFlow code to be executed and evaluated line by line. 
 
-In this code pattern, we will look at the impact of Eager Execution and the benefits of having it enabled by default in TensorFlow 2.x. We will use a Jupyter notebook to observe the behavior of TensorFlow when eager execution is disabled and when it is enabled.
+In this code pattern, we will look at the impact of Eager Execution and the benefits of having it enabled by default in TensorFlow 2.x. We will use a Jupyter notebook to observe the behavior of TensorFlow when Eager Execution is disabled and when it is enabled.
 
 
 # Flow
@@ -82,9 +82,9 @@ In this code pattern, we will look at the impact of Eager Execution and the bene
 
 > Upload a draft architecture diagram to this issue. Remember to include numbers in the diagram to represent the flow steps that you provide below the diagram. A graphic designer will use your draft to create the production-ready image.
 
-As part of this code pattern, you will first disable eager execution and run TensorFlow code to observe how Tensor operations are executed.
+As part of this code pattern, you will first disable Eager Execution and run TensorFlow code to observe how Tensor operations are executed.
 
-Next, you will restart the kernel and re-enable eager execution, then re-run the TensorFlow code to observe how TensorFlow operations behave differently when eager execution is enabled.
+Next, you will restart the kernel and re-enable Eager Execution, then re-run the TensorFlow code to observe how TensorFlow operations behave differently when Eager Execution is enabled.
 
 
 # Instructions
@@ -96,11 +96,12 @@ Next, you will restart the kernel and re-enable eager execution, then re-run the
 * Ready to get started? Check out the [README](https://github.com/IBM/Eager-Execution-in-TensorFlow-2.x/blob/master/README.md) for the step-by-step details on:
 
 1. Clone the repo
-2. Run jupyter-lab
-3. Read through the notebook
-4. Run the first half of the notebook
-5. Restart the kernel
-6. Run the second half of the notebook
+2. Setup Cloud Pak for Data as a Service
+3. Create a new Project and import the notebook
+4. Read through the notebook
+5. Run the first half of the notebook
+6. Restart the kernel
+7. Run the second half of the notebook
 
 
 # Components and services
@@ -111,7 +112,11 @@ Next, you will restart the kernel and re-enable eager execution, then re-run the
 
 > To view services, see [https://console.bluemix.net/catalog/](https://console.bluemix.net/catalog/)
 
-* [Jupyter Notebook](https://jupyter.org)
+* [IBM Cloud Pak for Data](https://developer.ibm.com/components/cloud-pak-for-data/)
+
+* [Watson Studio](https://developer.ibm.com/components/watson-studio/)
+
+* [Jupyter Notebooks](https://jupyter.org/) 
 
 
 # Runtimes
